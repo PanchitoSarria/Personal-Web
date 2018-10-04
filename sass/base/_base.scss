@@ -1,0 +1,91 @@
+/*------------------------------------
+Fonts Size Breakpoints
+------------------------------------*/
+html{
+	font-size: 1em;
+}
+@media all and (min-width: $min-tablet3) and (orientation: portrait){
+	html{
+		font-size: 1.5em;
+	}
+}
+
+body{
+	font-family: Inter UI, Helvetica, sans-serif;
+	color: $color-text;
+
+	box-sizing: border-box;
+
+	font-kerning: normal;
+    -moz-font-feature-settings: "kern" 1, "liga" 1;
+    -ms-font-feature-settings: "kern" 1, "liga" 1;
+    -o-font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-feature-settings: "kern" 1, "liga" 1;
+    font-feature-settings: "kern" 1, "liga" 1;
+}
+
+a{
+	color: $color-text;
+}
+
+
+
+/*--------------------------------------
+H1 H2 H3 H4 H5 H6 sizes
+--------------------------------------*/
+
+.title-display-big{
+	font-size: 2.2em;
+}
+@media all and (min-width: $min-md-large){
+	.title-display-big{
+		font-size: 3.85em;
+	}
+}
+
+
+.section-title{
+	color: $color-corporative;
+	font-size: 2em;
+}
+.section-title-back-txt{
+}
+
+@media all and (min-width: $min-md-large){
+	.m-box-info-title{
+		font-size: 1.8em;
+	}
+}
+
+
+/*==============================================
+Formular Styles
+==============================================*/
+button:focus,
+input:focus{
+	outline: none;
+}
+
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: inherit;
+}
+
+
+/*==============================================
+List
+==============================================*/
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}

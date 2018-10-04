@@ -1,0 +1,49 @@
+fransarria_classy.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x    
+    - 1.5x
+    - 2x  
+fransarria_classy.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 720px)'
+  weight: 1
+  multipliers:
+    - 1x    
+    - 1.5x
+    - 2x
+fransarria_classy.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 851px)'
+  weight: 2
+  multipliers:
+    - 1x    
+    - 1.5x
+    - 2x
+fransarria_classy.desk:
+  label: wide
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x    
+    - 1.5x
+    - 2x
+fransarria_classy.4k:
+  label: wide
+  mediaQuery: 'all and (min-width: 2000px)'
+  weight: 2
+  multipliers:
+    - 1x    
+    - 1.5x
+    - 2x
+
+fransarria_classy.4k2:
+  label: wide
+  mediaQuery: 'all and (min-width: 3000px)'
+  weight: 2
+  multipliers:  
+    - 1.5x
+    - 2x
+

@@ -1,0 +1,153 @@
+.home_main--text{
+	margin-top: 4rem;
+}
+
+@media all and (orientation: portrait){
+	.home_main__wpr{
+		margin-top: 8rem;		
+	}
+}
+
+@media all and (max-width: $max-phone) and (orientation: portrait){
+	.path-frontpage{
+		padding: 0 5%;
+	}
+}
+@media all and (min-width: $min-ph-to-tblt) and (orientation: portrait){
+	.home_main--text{
+		padding: 0 6%;
+	}
+}
+
+.home_main--text-content{
+	font-size: 1.32rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.7;
+	letter-spacing: 0.02rem;
+}
+.text-highlight{
+	color: $color-corporative;
+}
+
+@media all and (min-width: $min-ph-to-tblt){
+	.home_main--portrait{
+		width: 56%;
+		margin: 0 auto;
+	}
+	.home_main--text-content{
+		font-size: 2em;
+	}
+}
+
+@media all and (min-width: 56em) and (orientation: landscape){
+	.path-frontpage{
+		position: relative;
+		height: 100vh;
+	}
+	.home_main__wpr{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		width: 68%;
+		margin: 0 auto;
+	}
+	.home_main--portrait{
+		width: 32%;
+		position: relative;
+		margin: 0;
+
+	}
+	.home_main--text{
+		width: 52%;
+		margin: 0;
+	}
+	.home_main--text-content{
+		text-align: left;
+		font-size: 1.2rem;
+		line-height: 1.35;
+	}
+	.home_main--portrait:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 85%;
+		width: 87%;
+		background-color: #536992;
+		z-index: -1;
+
+		animation-name: grows;
+		animation-duration: 0.5s;
+	}
+}
+@media all and (min-width: $min-tablet3) and (orientation: landscape){
+	.home_main--text-content{
+		font-size: 1.2rem;
+	}
+}
+@media all and (min-width: $min-Large) and (orientation: landscape){
+	.home_main--text-content{
+		font-size: 1.5rem;
+	}
+	.home_main--text{
+		width: 62%;
+		
+	}
+}
+@media all and (min-width: $min-X-Large) and (orientation: landscape){
+	.home_main--text-content{
+		font-size: 1.5rem;
+	}
+	.home_main__wpr{
+		width: 52em;
+	}
+}
+@media all and (min-width: $min-XX-Large) and (orientation: landscape){
+	.home_main--text-content{
+		font-size: 1.8rem;
+	}
+	.home_main__wpr{
+		width: 62rem;
+		
+	}
+}
+@media all and (min-width: $min-XXX-Large) and (orientation: landscape){
+	.home_main--text-content{
+		font-size: 2.05rem;
+	}
+	.home_main__wpr{
+		width: 75rem;
+	}
+}
+
+
+
+
+
+@keyframes grows {
+  from,
+  40%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.61, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  40% {
+    opacity: 0.4;
+    transform: scaleX(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}

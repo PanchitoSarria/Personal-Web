@@ -1,0 +1,43 @@
+#block-milogo{
+	position: fixed;
+	top: 1.4rem;
+	left: 5%;
+}
+.site-logo{
+	text-align: right;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+.site-logo-main{
+	font-size: 1em;
+}
+.site-logo-slogan{
+	font-size: 0.7em;
+	font-weight: 500;
+}
+
+@media all and (min-width: $min-md-1x) and (orientation: landscape){
+	.site-logo{
+		position: fixed;
+		top: 2em;
+		left: 2em;
+	}
+}
+
+@media all and (min-width: $min-X-Large){
+	.site-logo{
+		font-size: 1.2rem;
+	}
+}
+
+@media all and (min-width: $min-XX-Large){
+	.site-logo{
+		font-size: 1.3rem;
+	}
+}
+
+@media all and (min-width: $min-XXX-Large){
+	.site-logo{
+		font-size: 1.45rem;
+	}
+}
